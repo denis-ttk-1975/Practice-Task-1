@@ -23,11 +23,11 @@
 
 'use strict';
 
-let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?', 100);
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', 100);
 
 alert(numberOfFilms);
 
-let personalMovieDB = {count: NaN,
+let personalMovieDB = {count: numberOfFilms,
 	movies: {},
 	actors: {},
 	genres: [],
